@@ -1,0 +1,10 @@
+<h1>Smart phone shop here!!!</h1>
+<div class="container">
+  @for(item of items; track item.id){
+    <div class="item">
+      <div class="title">{{item.name}}</div>
+      <button (click)="onAddToCart()">Add to cart</button>
+    </div>
+  }
+</div>
+<router-outlet></router-outlet>
